@@ -1,0 +1,41 @@
+<body style="color: white; background-color: #1d2630">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5"><strong>Edit Approval Req</strong></h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form id="curriculum-form " class="row-justify-content-center mb-4" [formGroup]="updatepostform"
+              >
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="First Name">Name</label>
+                    <input class="form-control" formControlName="Name" type="text" placeholder="Enter your fullname">
+                </div>
+                <div class="col-8 col-md-8 mb-3">
+                    <label for="area">Area</label>
+                    <input class="form-control" formControlName="Area" type="text" placeholder="Area">
+                </div>
+                <div class="col-8 col-md-8 mb-3">
+                    <label for="institution">Institution</label>
+                    <input class="form-control" formControlName="Institution" type="text"
+                        placeholder="Write your institution/Corporate office">
+                </div>
+                <div class="col-8 col-md-8 mb-3">
+                    <label for="area"> Category</label>
+                    <input class="form-control" formControlName="Category" type="text" placeholder="Category of requirement">
+                </div>
+
+                <div class="col-8 col-md-8 mb-3">
+                    <label for="No. of hours training">Hours</label>
+                    <input class="form-control" formControlName="Hours" type="text" placeholder="No. of hours training">
+                </div>
+
+
+
+
+                <button type="submit" (click)="submit()" class="btn btn-success btn-sm approve">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
